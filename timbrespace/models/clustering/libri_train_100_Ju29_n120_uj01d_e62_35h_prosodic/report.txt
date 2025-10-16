@@ -1,0 +1,191 @@
+============================================================
+PHONEME CLUSTERING ANALYSIS REPORT
+============================================================
+
+MODEL CONFIGURATION:
+Number of clusters: 120
+Input features dimension: 6
+Dimensionality reduction: None
+Device: cuda:1
+Total training samples: 6999780
+
+CLUSTER DISTRIBUTION:
+------------------------------
+Cluster 0: 99145 samples (1.42%)
+Cluster 1: 68490 samples (0.98%)
+Cluster 2: 53378 samples (0.76%)
+Cluster 3: 85306 samples (1.22%)
+Cluster 4: 56524 samples (0.81%)
+Cluster 5: 36457 samples (0.52%)
+Cluster 6: 31573 samples (0.45%)
+Cluster 7: 43574 samples (0.62%)
+Cluster 8: 46343 samples (0.66%)
+Cluster 9: 24258 samples (0.35%)
+...
+Cluster 112: 68698 samples (0.98%)
+Cluster 113: 35417 samples (0.51%)
+Cluster 115: 71382 samples (1.02%)
+Cluster 116: 60348 samples (0.86%)
+Cluster 119: 111954 samples (1.60%)
+
+Total samples: 6999780
+Cluster membership statistics:
+  Min:  328 (0.00%)
+  Max:  1266002 (18.09%)
+  Mean: 69304.75
+  Std:  122286.76
+
+CLUSTERING QUALITY METRICS:
+------------------------------
+Overall Quality Scores:
+  Silhouette Score: 0.3034 (range: -1 to 1, higher is better)
+  Silhouette Score Std: 0.1454
+  Calinski-Harabasz Score: 997.06 (higher is better)
+  Davies-Bouldin Score: 1.3616 (lower is better)
+  Inertia (WCSS): 344064.00 (lower is better)
+  Dunn Index: 0.0000 (higher is better)
+  BIC: -21087090.00 (lower is better)
+  AIC: -21088741.37 (lower is better)
+  BIC per sample: -3.0125
+  AIC per sample: -3.0128
+
+Distance Metrics:
+  Avg Intra-cluster Distance: 0.1835 ± 0.1234
+  Avg Inter-cluster Distance: 0.9733 ± 0.4047
+  Min Inter-cluster Distance: 0.0000
+  Max Intra-cluster Distance: 1.1406
+
+Cluster Separation Metrics:
+  Avg Separation Ratio: 1.5445 ± 1.0358
+  Min/Max Separation Ratio: 1.0000 / 19.1045
+
+Cluster Balance Metrics:
+  Cluster Size Range: 328 - 1266002 samples
+  Cluster Size Mean ± Std: 69304.8 ± 122286.8
+  Cluster Balance Ratio: 1.7645 (lower is more balanced)
+  Largest Cluster: 18.09% of data
+  Smallest Cluster: 0.00% of data
+  Effective Number of Clusters: 63.89
+  Cluster Entropy: 5.9976
+
+Per-Cluster Silhouette Scores:
+  Best performing clusters:
+    Cluster 33: 1.0000
+    Cluster 22: 0.7198
+    Cluster 29: 0.5981
+    Cluster 57: 0.5718
+    Cluster 31: 0.4771
+    Cluster 111: 0.4590
+    Cluster 86: 0.4194
+    Cluster 100: 0.3623
+    Cluster 93: 0.3055
+    Cluster 53: 0.2952
+  ...
+  Worst performing clusters:
+    Cluster 56: 0.0389
+    Cluster 109: 0.0383
+    Cluster 1: 0.0231
+    Cluster 32: 0.0196
+    Cluster 15: 0.0023
+
+FEATURE IMPORTANCE ANALYSIS:
+------------------------------
+Top 20 Most Important Features:
+   1. f0: 0.2910
+   2. power: 0.2371
+   3. f1: 0.2099
+   4. snr: 0.1219
+   5. f2: 0.0847
+   6. f0_width: 0.0554
+
+Feature Importance by Cluster (top 10 clusters):
+
+  Cluster_0:
+    1. f0: 0.2875
+    2. power: 0.2259
+    3. f1: 0.1919
+    4. snr: 0.1219
+    5. f2: 0.1191
+
+  Cluster_1:
+    1. f1: 0.2270
+    2. f0: 0.2165
+    3. power: 0.1596
+    4. f0_width: 0.1500
+    5. f2: 0.1300
+
+  Cluster_2:
+    1. power: 0.4371
+    2. snr: 0.1887
+    3. f0: 0.1427
+    4. f1: 0.1100
+    5. f2: 0.0773
+
+  Cluster_3:
+    1. f0: 0.2837
+    2. power: 0.2580
+    3. f1: 0.1885
+    4. f2: 0.1091
+    5. snr: 0.1010
+
+  Cluster_4:
+    1. f1: 0.6652
+    2. power: 0.1042
+    3. f0: 0.1037
+    4. f0_width: 0.0500
+    5. snr: 0.0439
+
+  Cluster_5:
+    1. f0: 0.3510
+    2. power: 0.3186
+    3. f1: 0.1356
+    4. f0_width: 0.0740
+    5. snr: 0.0723
+
+  Cluster_6:
+    1. f1: 0.2582
+    2. f0: 0.2486
+    3. power: 0.2440
+    4. snr: 0.2086
+    5. f2: 0.0251
+
+  Cluster_7:
+    1. f1: 0.3787
+    2. snr: 0.2779
+    3. f0: 0.1446
+    4. power: 0.1427
+    5. f2: 0.0348
+
+  Cluster_8:
+    1. f0: 0.2928
+    2. power: 0.2480
+    3. f1: 0.2097
+    4. f2: 0.1140
+    5. snr: 0.0738
+
+  Cluster_9:
+    1. f0: 0.5686
+    2. power: 0.1720
+    3. f1: 0.1340
+    4. f2: 0.0531
+    5. snr: 0.0488
+
+QUALITY ASSESSMENT SUMMARY:
+------------------------------
+Overall Quality Assessment: FAIR
+
+Key Observations:
+  • Good cluster separation (Silhouette > 0.3)
+  • Imbalanced cluster sizes
+  • Many clusters may be underutilized
+
+Recommendations:
+  • Consider using different initialization or balancing techniques
+  • Consider reducing the number of clusters to improve utilization
+  • Clusters may be too close together - consider feature selection or dimensionality reduction
+  • Low BIC suggests good model fit for the current number of clusters
+
+Model Selection Notes:
+  • BIC favors simpler models and penalizes overfitting
+  • Compare BIC values across different cluster numbers to find optimal k
+  • Lower BIC indicates better balance between fit and complexity

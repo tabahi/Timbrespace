@@ -149,7 +149,7 @@ print(f"Token sequence: {sequences[0]}")
 
 Generate contextual embeddings from token sequences:
 
-> **Note**: Pre-trained transformer models will be available on HuggingFace Hub soon for immediate use without training.
+> **Note**: Pre-trained models for `SequenceEncoderPipeline` which are available on [Google Drive](https://drive.google.com/drive/folders/1Y3qfH3qVpqIRJVGNhy2_ZwYBox3mF13S?usp=sharing). It's a lightining module that wraps around `ProsodicSequenceEncoder`.
 
 ```python
 from timbrespace.p3vs2prbert.model_timbrespace import ProsodicSequenceEncoder
